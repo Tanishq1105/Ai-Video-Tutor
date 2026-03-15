@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+instance/
+.pytest_cache/
+.venv/
+list_models.py
+chroma_db/
+
+# Mac
+.DS_Store
+
+# Docker
+backend/static/uploads/*
+!backend/static/uploads/.gitkeep

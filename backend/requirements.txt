@@ -1,0 +1,12 @@
+flask
+sqlmodel
+chromadb
+google-genai
+python-dotenv
+pytest
+flask-sqlalchemy
+flask-login
+gunicorn
+boto3
+psycopg2-binary
+yt-dlp

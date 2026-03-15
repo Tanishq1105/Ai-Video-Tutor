@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  video-tutor:
+    build: .
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./instance:/app/instance
+      - ./backend/static/uploads:/app/backend/static/uploads
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - SUPABASE_ACCESS_KEY_ID=${SUPABASE_ACCESS_KEY_ID}
+      - SUPABASE_SECRET_ACCESS_KEY=${SUPABASE_SECRET_ACCESS_KEY}
+      - SUPABASE_BUCKET_NAME=${SUPABASE_BUCKET_NAME}
+      - SUPABASE_REGION=${SUPABASE_REGION}
+      - SUPABASE_URL=${SUPABASE_URL}
+      - DATABASE_URL=${DATABASE_URL}
+    restart: unless-stopped
