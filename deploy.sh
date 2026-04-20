@@ -3,7 +3,7 @@
 # Check if Docker is installed
 if ! command -v docker &> /dev/null; then
     echo "Error: Docker is not installed or not in your PATH."
-    echo "Please install Docker Desktop for Mac: https://docs.docker.com/desktop/install/mac-install/"
+    echo "Please install Docker Desktop: https://docs.docker.com/desktop/install/mac-install/"
     exit 1
 fi
 
